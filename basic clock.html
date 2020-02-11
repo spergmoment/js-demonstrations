@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basic Clock</title>
+</head>
+
+<body>
+    <script>
+        setInterval(() => {
+            var time = new Date(); // required, acts as a constant
+            var yr = time.getFullYear(); // get the year, e.g 2023
+            var month = time.getMonth(); // gets the month, e.g september (in number form)
+            if (month === 0) var month = "January";
+            /* the code below here converts those numbers to text.
+            Also, 0 is january, 1 is february, etc. */
+            if (month === 1) month = "February";
+            if (month === 2) month = "March";
+            if (month === 3) month = "April";
+            if (month === 4) month = "May";
+            if (month === 5) month = "June";
+            if (month === 6) month = "July";
+            if (month === 7) month = "August";
+            if (month === 8) month = "September";
+            if (month === 9) month = "October";
+            if (month === 10) month = "November";
+            if (month === 11) month = "December"; // december is 11
+            var day = time.getDate(); // gets the day, e.g 27
+            var hr = time.getHours(); // gets the current hour, e.g 9, it is in 24 hour time and formatting it to 12 hour time has bad side effects, like making anything ≥ 10 be 0
+            var min = time.getMinutes(); // gets the current minutes, e.g. 12
+            var sec = time.getSeconds(); // gets current seconds, e.g. 34
+            var week = time.getDay(); // gets day of week, e.g. monday
+            if (week === 0) week = "Sunday";
+            /* same as month, it's formatted in a number so this code below changes it the same way
+            also, 0 is sunday, 1 is monday etc and it ends on saturday, at 6 */
+            if (week == 1) week = "Monday";
+            if (week == 2) week = "Tuesday";
+            if (week == 3) week = "Wednesday";
+            if (week == 4) week = "Thursday";
+            if (week == 5) week = "Friday";
+            if (week == 6) week = "Saturday";
+            if (min < 10) {
+                min = "0" + min.toString().charAt(0);
+            }
+            if (sec < 10) {
+                sec = "0" + sec.toString().charAt(0);
+            }
+            if (hr < 10) {
+                hr= "0" + hr.toString().charAt(0);
+            }
+            document.body.innerHTML = (week + ", " + month + " " + day + ", " + yr + ", at " + hr + ":" + min + ":" + sec);
+        }, 1000);
+    </script>
+</body>
+
+</html>
