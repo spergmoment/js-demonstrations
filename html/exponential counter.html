@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+hi
+</title>
+</head>
+<body>
+<button onclick="expCount()">Click to count exponentially.</button>
+<p id="num"></p>
+<script>
+var num = prompt("Enter a number to start from.");
+document.getElementById("num").innerHTML = num;
+function expCount() {
+	num = num*num;
+	document.getElementById("num").innerHTML = num;
+}
+</script>
+</body>
+</html>
