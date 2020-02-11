@@ -7,3 +7,7 @@ prompt("Please enter an equation. Note: do ** for powers and exponents.")
             alert("This appears to be invalid. Please try again");
         }
     });
+/* Don't use eval in any public level of code, 
+especially on servers, 
+as people can use it maliciously, 
+since eval can execute any js code in there. */
