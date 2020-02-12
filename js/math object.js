@@ -30,7 +30,14 @@ console.log(Math.random() * 6); // same as before, but max of 6
 console.log((Math.random() * 6) + 3); // again, same as before, but min of 3 and max of 6
 console.log(Math.round((Math.random() * 12) + 2)); // same again, but this time, it rounds the number, with a max of 12 and min of 2
 
-/* That's all the methods available.
+
+/* That's all the methods that you may
+ever need. There are some others:
+acos(x), asin(x), atan(x), atan2(y, x),
+exp(x), and log(x), but these aren't
+very useful. Read about them here:
+https://www.w3schools.com/js/js_math.asp
+
 Now, let's look at the constants. */
 
 console.log(Math.PI); // this returns 3.141592653589793
