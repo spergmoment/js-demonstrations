@@ -8,10 +8,13 @@ But, in a nutshell, promises are used for
 getting the state of anything that is
 attached to a callback function. They
 are very useful. */
-prompt("Enter a number.").then(async p => { // this takes a prompt, which returns the user input, and promisifies it
+var p = prompt("Enter a number.");
+async function pr(n) { // this takes a prompt, which returns the user input, and promisifies it
   var x = p*(Math.floor(Math.random()*13)+2); // returns a value that is the prompt times a random number between 2 and 13.
-  await window.alert("The number returned is: " + p); // await pauses the async function until it is fulfilled
+  await window.alert("The number returned is: " + x); // await pauses the function until the thing it's attached to is fulfilled
 }
+pr(p);
+
 /* Promises are mainly useful for when you need to
 have some code that should be caught at any time,
 and also code that needs to wait for something before 
@@ -31,6 +34,7 @@ async function run() { // creates a new async function
     await console.error(err); // and shows the error, in this case we tried to change a constant, or the Promise resolution failed
   }
 }
+run();
 /* This is a very basic demonstration of
 Promises, async, and await. Check the
 MDN page on it for a better understanding. */
