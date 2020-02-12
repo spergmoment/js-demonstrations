@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Simple HTML Scripting
+    </title>
+</head>
+
+<body>
+    <h2>Click the button to display some text.</h2>
+    <p id="para"></p>
+    <button onclick="changeTxt()">Click this</button>
+    <!-- This is a button that executes the function changeTxt() -->
+    <!-- The script tag lets you insert JS code here -->
+    <script>
+        // Also, you must put the script after the element (this case, the paragraph) that it's changing
+        function changeTxt() { // function declaration
+            var p = document.getElementById("para");
+            /* document is the web page. getElementById gets any HTMl element by its id which is, in this case, the paragraph with id para */
+            p.innerHTML = "Hello, I have appeared!"; // innerHTML changes the contents of that element
+        }
+    </script>
+</body>
+
+</html>
