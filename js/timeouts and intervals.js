@@ -1,3 +1,4 @@
+ 
 /* Something that is very useful are timeouts and intervals,
 which can be created with the setTimeout and setInterval
 functions. But what do they do? Let's see... */
@@ -8,7 +9,7 @@ setTimeout(() => { // sets a timeout on a function...
   window.alert("You said: " + p);
   console.log(p);
   window.alert("Thank you!");
-}, 2000); // ...for 2 seconds, as that is in milliseconds.
+}, 500); // ...for half a second, as that is in milliseconds.
 
 /* However, theres a bit of a catch... */
 setTimeout(() => {
@@ -34,5 +35,5 @@ var n = 0;
 setInterval(() => {
   window.alert(n); // alerts the variable n.
   n++; // increments n by one
-}, 2000); // so now, every 2 seconds, you are alerted of the value of n, and it increments itself.
+}, 4000); // so now, every 4 seconds, you are alerted of the value of n, and it increments itself.
 /* These are generally very useful to know. */
