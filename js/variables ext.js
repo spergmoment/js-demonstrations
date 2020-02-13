@@ -17,3 +17,4 @@ var z;
 console.log(z); // returns undefined. as stated before, doing var (variable) without an assignment returns undefined.
 
 let n = ("x: " + x + " y: " + y + " z: " + z); // returns the string "x: 23 y: hello z: undefined"
+console.log(n);
