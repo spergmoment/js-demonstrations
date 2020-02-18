@@ -57,3 +57,13 @@ if(x>=35) { // this returns true, as well as x<=35, because it is asking "greate
 /* Remember: DO NOT DO => OR =<.
 => is arrow function syntax in ES6. That makes it confusing!
 and =< doesn't work. */
+
+/* The expected output should be:
+true!
+false!
+true!
+false!
+true!
+false!
+true!
+*/
