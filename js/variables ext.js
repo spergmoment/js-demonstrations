@@ -18,3 +18,11 @@ console.log(z); // returns undefined. as stated before, doing var (variable) wit
 
 let n = ("x: " + x + " y: " + y + " z: " + z); // returns the string "x: 23 y: hello z: undefined"
 console.log(n);
+
+/* Expected output:
+23
+hello
+50
+undefined
+x: 23 y: hello z: undefined
+*/
