@@ -27,3 +27,15 @@ console.log(9e999 * 9e999) // this is outside of the normal range of numbers. re
 console.log(23/0) // also returns Infinity, same with any division by 0.
 
 console.log(typeof Infinity) // also returns a number!
+
+/* The expected output should be this:
+NaN
+NaN
+number
+NaN
+48
+159
+Infinity
+Infinity
+number
+*/
