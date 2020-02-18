@@ -12,7 +12,7 @@ const z = 2; // you can't change consts. returns an error
 /* Now, a different scope... */
 if(true) {
   console.log(x); // returns 4
-  console.log(y); // returns an error, as variables made with let are only available in that scope
+  console.log(y); // returns 6
   console.log(z) // returns 3
   
   let n = 23; // how about we declare this variable with let...
