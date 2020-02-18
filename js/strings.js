@@ -22,3 +22,11 @@ var str4 = "hello! how are you?" +
 "my name is sperg."; 
 console.log(str4); // returns the string "hello! how are you? my name is sperg."
 /* Doing that is useful for code readability, especially with long strings. */
+
+/* Expected output:
+hello!
+hello!
+how are you?
+hello! my name is sperg. 7.288517868132322
+hello! how are you?my name is sperg.
+*/
