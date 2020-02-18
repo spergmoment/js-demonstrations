@@ -59,3 +59,32 @@ console.log(Math.LOG10E); // returns base 10 logarithm of E
 /* The only constant you'll really ever need is pi.
 The methods are more overall useful, but these constants
 can be nice in more complicated JS code. */
+
+/* The expected output should be:
+4
+8
+27
+27
+3
+32.9
+7
+7
+0.8939966636005579
+1
+1
+1
+-200
+150
+0.8639141349469235
+1.1743734907998542
+7.552440530779345
+2
+3.141592653589793
+2.718281828459045
+1.4142135623730951
+0.7071067811865476
+0.6931471805599453
+2.302585092994046
+1.4426950408889634
+0.4342944819032518
+*/
