@@ -35,7 +35,7 @@ async function run() { // creates a new async function
     const y = 32;
     y = 1; // creates a constant, and tries to change it.
   } catch (err) { // catches the error...
-    await console.error(err); // and shows the error, in this case we tried to change a constant, or the Promise resolution failed
+    await console.log("Error!\n" + err); // and shows the error, in this case we tried to change a constant, or the Promise resolution failed
   }
 }
 run();
@@ -43,3 +43,15 @@ run();
 /* This is a very basic demonstration of
 Promises, async, and await. Check the
 MDN page on it for a better understanding. */
+
+/* Example output:
+This is a promise that has been resolved.
+Error!
+TypeError: Assignment to constant variable.
+Promise {
+[[PromiseStatus]]:
+resolved
+[[PromiseValue]]:
+undefined
+}
+*/
