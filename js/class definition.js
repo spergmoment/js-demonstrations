@@ -9,7 +9,7 @@ it is actually pretty simple! */
 class Time { // invoke a new class, called Time
     constructor(hour, min, sec, millisec) { // the base constructor of the class, contains any non-default values
         this.hour = parseInt(hour, 10) || new Date().getHours();
-        // is there an "hour" variable defined? if so, set "hour to that value, but if not, make it the current hour
+        // is there an "hour" variable defined? if so, set "hour" to that value, but if not, make it the current hour
         this.min = parseInt(min, 10) || new Date().getMinutes(); // same as above, but with minutes
         this.sec = parseInt(sec, 10) || new Date().getSeconds(); // "" with seconds
         this.millisec = parseInt(millisec, 10) || new Date().getMilliseconds(); // same with milliseconds
@@ -35,7 +35,7 @@ Time.prototype.getMinutes = function() {
     the ? tells the doc that it's a template literal...
     "Hey!" : "What's up?"} will, in this case, return either 
     "Hey! Sample Text" if the value from the array is "Hello!"
-    or "What's up? Sample Text" if the value is anything else, in this case "Hey!".
+    or "What's up? Sample Text" if the value is anything else, in this case "Hi!".
     You can apply this to the return statement seen above, like so...
     ${(this.min>=10) checks if the current minute or the inputted minute is greater than or equal to 10...
     ? tells the doc it's a template literal...
@@ -85,3 +85,16 @@ console.log(time2.getSeconds());
 console.log(time2.getMilliseconds());
 console.log(time2.get12Hour());
 console.log("The time is: " + time2);
+/* Expected output:
+The current hour
+The current minute
+The current seconds
+The current milliseconds
+The current 12 hour time
+The current formatted time
+16
+03
+09
+074
+4 P.M.
+The time is: 4:03:09.074 P.M. */
